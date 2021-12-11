@@ -1,0 +1,29 @@
+# 仮想環境作成
+python -m venv <仮想環境名>
+source <仮想環境名>/bin/activate
+
+(脱出) deactivate
+
+インストール
+pip install -r requirements.txt
+
+## project作成
+django-admin startproject <プロジェクト名>
+
+# setting.py変更
+LANGUAGE_CODE = 'ja'
+TIME_ZONE = 'Asia/Tokyo'
+
+## DBマイグレート
+python manage.py migrate
+
+## Webサーバ起動
+python manage.py runserver
+
+## application作成
+python manage.py startapp <アプリケーション名>
+
+
+# csrf_token
+【Django】 csrf_tokenの仕組み
+https://djangobrothers.com/blogs/django_csrf/
