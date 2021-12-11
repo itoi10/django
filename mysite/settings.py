@@ -28,7 +28,7 @@ SECRET_KEY = '3r-4e77n0pw#)$mdovej0a_7ax7yhyv2^@ofhar!2&f-@(#m-#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-bookapi.herokuapp.com/']
+ALLOWED_HOSTS = ['django-bookapi.herokuapp.com']
 
 
 # Application definition
