@@ -22,11 +22,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "3r-4e77n0pw#)$mdovej0a_7ax7yhyv2^@ofhar!2&f-@(#m-#"
-
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+
 
 ALLOWED_HOSTS = ["django-bookapi.herokuapp.com", "127.0.0.1"]
 
@@ -129,3 +126,6 @@ env = environ.Env()
 env.read_env(".env")
 
 RAKUTEN_API_APP_ID = env("RAKUTEN_API_APP_ID")
+
+SECRET_KEY = env("SECRET_KEY")
+DEBUG = env("DEBUG")
